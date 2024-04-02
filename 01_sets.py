@@ -19,8 +19,8 @@ print(uniqueNumbersArray)
 set_teams.add('villa')
 set_teams.add('liverpool')
 
-#update  
-set_teams.update({'girona' , 'atm'})
+#update
+set_teams.update({'girona', 'atm'})
 
 #remove
 set_teams.remove('madrid')
@@ -29,3 +29,24 @@ set_teams.discard('estudiantes')
 #set_teams.remove('bayern') Error becouse not exist in the set
 
 print(set_teams)
+
+## UNION
+set_a = {'col', 'mex', 'bol'}
+set_b = {'pe', 'bol'}
+
+print(set_a.union(set_b))
+print(set_a | set_b)
+
+## INTERSECTION
+print(set_a.intersection(set_b))
+print(set_a & set_b)
+
+## DIFFERENCE
+print(set_a - set_b)
+print(set_a.difference(set_b))
+print(set_b - set_a)
+print(set_b.difference(set_a))
+
+## Simetric Difference
+print(set_a ^ set_b)
+print(set_a.symmetric_difference(set_b))
