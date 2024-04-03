@@ -22,7 +22,7 @@ print(teamsHistory)
 
 #Dictionary Comprenhension
 teamsHistory = {teams[i]: goals[i] for i in range(len(teams))}
-teamsHistoryV2 = {team: goal for (team, goal) in zip(teams, goals)}
+teamsHistoryV2 = {team: goal for (team, goal) in zip(teams, goals) if goal > 40}
 
 print('first', teamsHistory)
 print('second', teamsHistoryV2)
