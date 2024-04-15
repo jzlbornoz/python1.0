@@ -19,8 +19,8 @@ while keepAnswering:
       'Introduce el idima que desea para la traduccion (codigo): ')
 
   if (textToTranslate):
-    print(f'La traduccion de "{textToTranslate}" es:')
-    print(f'== {translateText(textToTranslate, outputLanguage)} ==')
+    print(f'La traduccion de "{textToTranslate}"" es: ')
+    print(translateText(textToTranslate, outputLanguage))
   else:
     'Error al traducir :('
   userRes = input('¿Quieres traducir otro texto? (s/n)')
